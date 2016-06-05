@@ -46,10 +46,10 @@
           <div class="panel-body">
             <!-- ZAČETEK: Opis ideje, ki jo aplikacija podpira -->
             <ul> 
-            <li><strong>OSNOVNI OPIS IDEJE: Aplikacija izračuna približno bazalno presnovo/metabolizem (<strong> <a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">Klik</a></strong>) uporabnika, glede na vnešene podatke.</li> 
+            <li><strong>OSNOVNI OPIS IDEJE: Aplikacija izračuna približno bazalno presnovo/metabolizem <strong><a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">(Klik)</a></strong> uporabnika, glede na vnešene podatke.</li> 
             <li><strong>OSNOVNI SCENARIJ UPORABE: </strong>Uporabnik vnese svoje podatke. Aplikacija izračuna BMR, prikaže rezultate drugih uporabnikov in priporoča količino zaužitih kalorij/dan glede na uporabnikovo fizično aktivnost.</li>
             <li><strong>CILJA PUBLIKA: </strong>Vsakdanji uporabnik interneta</li>
-            <li><strong>NAMEN: </strong>Da mu aplikacija svetuje in obvestu kako BMR vpliva na njegovo telo.</li>
+            <li><strong>NAMEN: </strong>Da uporabniku aplikacija svetuje in obvestu kako BMR vpliva na njegovo telo ter da obvesti svoj BMR na twitterju, če želi.</li>
             </ul>
             <!-- KONEC: Opis ideje, ki jo aplikacija podpira -->
           </div>
@@ -60,7 +60,7 @@
           </div>
           <div class="panel-body">
             <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
-            <p><strong>TO-DO</strong>: Na tem mestu je navesti zunanji vir podatkov (URL naslov), na kakšen način ste ga uporabili (neposredni API klic, uvožena statična datoteka ipd.) in kaj je bil namen uporabe (kako se vključuje v osnovno idejo aplikacije).</p>
+           <p>Zunanji vir je Twitter, klic z "https://dev.twitter.com/rest/reference/post/media/upload". Objavi sliko, na katerem je Gauge in izračunana vrednost na uporabnikov twitter račun.</p>
             <!-- KONEC: Uporabljeni zunanji viri podatkov -->
           </div>
         </div>
@@ -70,7 +70,7 @@
           </div>
           <div class="panel-body">
             <!-- ZAČETEK: Master/detail načrtovalski vzorec -->
-            <p><strong>TO-DO</strong>: Na tem mestu morate navesti uporabljen master/detail načrtovalski vzorec in na kakšen način ga nameravate uporabiti.</p>
+            <p>Ob kliku "Izračunaj" na spletni strani se uporabniku prikaže vizualizacija podatkov skupaj z izračunano vrednost BMR. S pritiskom na gumb "Priporočaj" se prikažejo še priporočila.</p>
             <!-- KONEC: Master/detail načrtovalski vzorec -->
           </div>
         </div>
@@ -80,7 +80,7 @@
           </div>
           <div class="panel-body">
             <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
-            <p><strong>TO-DO</strong>: Na tem mestu je potrebno navesti uporabljeno tehniko vizualizacije podatkov (za pomoč lahko uporabite primer iz <a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank">D3.js galerije</a>) in zakaj je bila ta tehnika izbrana.</p>
+            <p>Za vizualizacijo podatkov bo uprabljen navaden Gauge tehnika, ki prikaže "velikost" vrednosti BMR-ja, ki bo normalizirana glede na povprečno vrednost prebivalca istega spola. Izbrana je bila, ker najlažje prikazuje in najbolj jasno razloži, ali ima uporabnik visok ali nizek BMR.</p>
             <!-- KONEC: Uporabljeni zunanji viri podatkov -->
           </div>
         </div>
